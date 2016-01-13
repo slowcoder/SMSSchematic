@@ -12,4 +12,9 @@ $CMP CXK3864
 D 8K-Word x 8 bit Mask Programmable ROM
 $ENDCMP
 #
+$CMP DIN_8
+D 8 pin DIN connector
+K CONN DIN 8-pins
+$ENDCMP
+#
 #End Doc Library

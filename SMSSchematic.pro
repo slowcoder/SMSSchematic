@@ -1,4 +1,4 @@
-update=22/05/2015 07:44:53
+update=2016-01-13 21:47:26
 version=1
 last_client=kicad
 [general]
@@ -60,3 +60,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=SMS_Chips
