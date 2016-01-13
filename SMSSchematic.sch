@@ -28,7 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:SMS_Chips
+LIBS:SMSSchematic-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -1101,7 +1101,7 @@ U 1 1 56970907
 P 12800 6700
 F 0 "SW2" H 12950 6810 50  0000 C CNN
 F 1 "PAUSE" H 12800 6620 50  0000 C CNN
-F 2 "" H 12800 6700 50  0000 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_PUSH_SMALL" H 12800 6700 50  0001 C CNN
 F 3 "" H 12800 6700 50  0000 C CNN
 	1    12800 6700
 	1    0    0    -1  
@@ -1112,7 +1112,7 @@ U 1 1 56970984
 P 12400 6500
 F 0 "R4" H 12430 6520 50  0000 L CNN
 F 1 "4.7K" H 12430 6460 50  0000 L CNN
-F 2 "" H 12400 6500 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" H 12400 6500 50  0001 C CNN
 F 3 "" H 12400 6500 50  0000 C CNN
 	1    12400 6500
 	1    0    0    -1  
@@ -1343,7 +1343,7 @@ Wire Wire Line
 Wire Wire Line
 	2700 10800 2700 10900
 Wire Bus Line
-	600  7200 600  11000
+	600  3200 600  11000
 Wire Wire Line
 	1400 7600 1600 7600
 Wire Wire Line
@@ -1760,8 +1760,6 @@ Wire Wire Line
 	7800 10400 8200 10400
 Wire Bus Line
 	7700 6800 7700 10300
-Wire Bus Line
-	7700 6800 4500 6800
 Wire Wire Line
 	7400 8600 6800 8600
 Wire Wire Line
@@ -1787,7 +1785,7 @@ Wire Wire Line
 Entry Bus Bus
 	9900 7200 10000 7300
 Wire Bus Line
-	9900 7200 3700 7200
+	700  7200 9900 7200
 Text Label 10200 7100 0    60   ~ 0
 MREQ
 Text Label 10200 7200 0    60   ~ 0
@@ -1881,10 +1879,10 @@ VDP\n
 Text Notes 8900 9200 0    60   ~ 0
 IO\nGateArray\n
 $Comp
-L VCC #PWR?
+L VCC #PWR019
 U 1 1 56977967
 P 14000 7600
-F 0 "#PWR?" H 14000 7450 50  0001 C CNN
+F 0 "#PWR019" H 14000 7450 50  0001 C CNN
 F 1 "VCC" H 14000 7750 50  0000 C CNN
 F 2 "" H 14000 7600 50  0000 C CNN
 F 3 "" H 14000 7600 50  0000 C CNN
@@ -1899,10 +1897,10 @@ Wire Wire Line
 	13900 7700 14000 7700
 Connection ~ 14000 7700
 $Comp
-L VCC #PWR?
+L VCC #PWR020
 U 1 1 56977C2A
 P 15900 7600
-F 0 "#PWR?" H 15900 7450 50  0001 C CNN
+F 0 "#PWR020" H 15900 7450 50  0001 C CNN
 F 1 "VCC" H 15900 7750 50  0000 C CNN
 F 2 "" H 15900 7600 50  0000 C CNN
 F 3 "" H 15900 7600 50  0000 C CNN
@@ -1916,4 +1914,347 @@ Wire Wire Line
 Wire Wire Line
 	15800 7700 15900 7700
 Connection ~ 15900 7700
+Wire Bus Line
+	4600 6800 7700 6800
+Text GLabel 10600 11000 2    60   Input ~ 0
+DATA_BUS
+Text GLabel 3100 7200 1    60   Input ~ 0
+ADDRESS_BUS
+Text GLabel 3300 7000 1    60   Input ~ 0
+BUS_CONTROL
+Wire Wire Line
+	800  1300 800  3100
+Wire Wire Line
+	900  1300 900  3000
+Wire Wire Line
+	1000 1300 1000 3000
+Wire Wire Line
+	1100 1300 1100 3000
+Wire Wire Line
+	1200 1300 1200 3000
+Wire Wire Line
+	1300 1300 1300 3300
+Wire Wire Line
+	1400 1300 1400 3300
+Wire Wire Line
+	1500 1300 1500 3300
+Wire Wire Line
+	1600 1300 1600 3300
+Wire Wire Line
+	1700 1300 1700 3300
+Wire Wire Line
+	1800 1300 1800 3000
+Wire Wire Line
+	1900 1300 1900 3300
+Wire Wire Line
+	2100 1300 2100 3100
+Wire Wire Line
+	2200 1300 2200 3100
+Wire Wire Line
+	2300 1300 2300 3100
+Wire Wire Line
+	2400 1300 2400 3100
+Wire Wire Line
+	2500 1300 2500 3100
+Wire Wire Line
+	2600 1300 2600 3100
+Wire Wire Line
+	2700 1300 2700 3500
+Wire Wire Line
+	2800 3100 2800 1300
+Wire Wire Line
+	2900 1300 2900 3100
+Wire Wire Line
+	3000 1300 3000 3100
+Wire Wire Line
+	3100 1300 3100 3100
+Wire Wire Line
+	3200 1300 3200 3300
+Wire Wire Line
+	3300 1300 3300 3300
+Wire Wire Line
+	3400 1300 3400 3300
+Wire Wire Line
+	3500 1300 3500 3300
+Wire Wire Line
+	3600 1300 3600 3300
+Wire Wire Line
+	3700 1300 3700 3300
+Wire Wire Line
+	3800 1300 3800 3300
+Wire Wire Line
+	3900 1300 3900 3300
+Wire Wire Line
+	4000 1300 4000 3300
+Wire Wire Line
+	4100 1300 4100 3000
+Wire Wire Line
+	4200 1300 4200 3100
+Wire Wire Line
+	4300 1300 4300 2150
+Wire Wire Line
+	4400 1300 4400 2150
+Wire Wire Line
+	4500 1300 4500 2150
+Wire Wire Line
+	4600 1300 4600 2150
+Wire Wire Line
+	4700 1300 4700 2150
+Wire Wire Line
+	4800 1300 4800 2150
+Wire Wire Line
+	4900 1300 4900 2150
+Wire Wire Line
+	5000 1300 5000 2150
+Wire Wire Line
+	5100 1300 5100 2150
+Wire Wire Line
+	5200 1300 5200 2150
+Wire Wire Line
+	5300 1300 5300 2150
+Wire Wire Line
+	5400 1300 5400 2150
+Wire Wire Line
+	5500 1300 5500 2150
+Wire Wire Line
+	5600 1300 5600 2150
+Wire Wire Line
+	5700 1300 5700 2150
+$Comp
+L SMS_Card_Port CN2
+U 1 1 5696B448
+P 2400 2450
+F 0 "CN2" H 2500 550 60  0000 C CNN
+F 1 "SMS_Card_Port" H 2450 4150 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_2x17" H 2400 2450 60  0001 C CNN
+F 3 "" H 2400 2450 60  0000 C CNN
+	1    2400 2450
+	0    -1   1    0   
+$EndComp
+Connection ~ 800  2150
+Connection ~ 900  2150
+Connection ~ 1000 2150
+Connection ~ 1100 2150
+Connection ~ 1200 2150
+Connection ~ 1300 2150
+Connection ~ 1400 2150
+Connection ~ 1500 2150
+Connection ~ 1600 2150
+Connection ~ 1700 2150
+Connection ~ 1800 2150
+Connection ~ 1900 2150
+Connection ~ 2100 2150
+Connection ~ 2200 2150
+Connection ~ 2300 2150
+Connection ~ 2400 2150
+Connection ~ 2500 2150
+Connection ~ 2600 2150
+Connection ~ 2700 2150
+Connection ~ 2800 2150
+Connection ~ 2900 2150
+Connection ~ 3000 2150
+Connection ~ 3100 2150
+Connection ~ 3200 2150
+Connection ~ 3300 2150
+Connection ~ 3400 2150
+Connection ~ 3500 2150
+Connection ~ 3600 2150
+Connection ~ 3700 2150
+Connection ~ 3800 2150
+Connection ~ 3900 2150
+Connection ~ 4000 2150
+Connection ~ 4100 2150
+Connection ~ 4200 2150
+$Comp
+L SMS_Cartridge CN4
+U 1 1 5696ECF8
+P 3100 750
+F 0 "CN4" H 3200 -1950 60  0000 C CNN
+F 1 "SMS_Cartridge" H 3200 3150 60  0000 C CNN
+F 2 "SMSFootprints:SMS_CartridgeEdgeConn" H 3100 750 60  0001 C CNN
+F 3 "" H 3100 750 60  0000 C CNN
+	1    3100 750 
+	0    -1   1    0   
+$EndComp
+$Comp
+L SMS_Cartridge CN3
+U 1 1 5696ED63
+P 3100 1600
+F 0 "CN3" H 3200 -1100 60  0000 C CNN
+F 1 "SMS_Cartridge" H 3200 4000 60  0000 C CNN
+F 2 "SMSFootprints:EDGE_CONN_50P_0p1pitch" H 3100 1600 60  0001 C CNN
+F 3 "" H 3100 1600 60  0000 C CNN
+	1    3100 1600
+	0    -1   1    0   
+$EndComp
+Text Label 3100 3100 1    60   ~ 0
+D0
+Text Label 3000 3100 1    60   ~ 0
+D1
+Text Label 2900 3100 1    60   ~ 0
+D2
+Text Label 2500 3100 1    60   ~ 0
+D3
+Text Label 2400 3100 1    60   ~ 0
+D4
+Text Label 2300 3100 1    60   ~ 0
+D5
+Text Label 2200 3100 1    60   ~ 0
+D6
+Text Label 2100 3100 1    60   ~ 0
+D7
+Connection ~ 2100 3000
+Connection ~ 2200 3000
+Connection ~ 2300 3000
+Connection ~ 2400 3000
+Connection ~ 2500 3000
+Connection ~ 2900 3000
+Connection ~ 3000 3000
+Connection ~ 3100 3000
+Entry Wire Line
+	2000 3200 2100 3100
+Entry Wire Line
+	2100 3200 2200 3100
+Entry Wire Line
+	2200 3200 2300 3100
+Entry Wire Line
+	2300 3200 2400 3100
+Entry Wire Line
+	2400 3200 2500 3100
+Entry Wire Line
+	2800 3200 2900 3100
+Entry Wire Line
+	2900 3200 3000 3100
+Entry Wire Line
+	3000 3200 3100 3100
+Wire Bus Line
+	3000 3200 600  3200
+Text Label 3200 3300 1    60   ~ 0
+A0
+Text Label 3300 3300 1    60   ~ 0
+A1
+Text Label 3400 3300 1    60   ~ 0
+A2
+Text Label 3500 3300 1    60   ~ 0
+A3
+Text Label 3600 3300 1    60   ~ 0
+A4
+Text Label 3700 3300 1    60   ~ 0
+A5
+Text Label 3800 3300 1    60   ~ 0
+A6
+Text Label 3900 3300 1    60   ~ 0
+A7
+Text Label 4000 3300 1    60   ~ 0
+A12
+Text Label 1900 3300 1    60   ~ 0
+A10
+Text Label 1700 3300 1    60   ~ 0
+A11
+Text Label 1500 3300 1    60   ~ 0
+A8
+Text Label 1600 3300 1    60   ~ 0
+A9
+Text Label 1400 3300 1    60   ~ 0
+A13
+Text Label 1300 3300 1    60   ~ 0
+A14
+Connection ~ 1300 3000
+Connection ~ 1400 3000
+Connection ~ 1500 3000
+Connection ~ 1600 3000
+Connection ~ 1700 3000
+Connection ~ 1900 3000
+Connection ~ 3200 3000
+Connection ~ 3300 3000
+Connection ~ 3400 3000
+Connection ~ 3500 3000
+Connection ~ 3600 3000
+Connection ~ 3700 3000
+Connection ~ 3800 3000
+Connection ~ 3900 3000
+Connection ~ 4000 3000
+Entry Wire Line
+	1200 3400 1300 3300
+Entry Wire Line
+	1300 3400 1400 3300
+Entry Wire Line
+	1400 3400 1500 3300
+Entry Wire Line
+	1500 3400 1600 3300
+Entry Wire Line
+	1600 3400 1700 3300
+Entry Wire Line
+	1800 3400 1900 3300
+Entry Wire Line
+	3100 3400 3200 3300
+Entry Wire Line
+	3200 3400 3300 3300
+Entry Wire Line
+	3300 3400 3400 3300
+Entry Wire Line
+	3400 3400 3500 3300
+Entry Wire Line
+	3500 3400 3600 3300
+Entry Wire Line
+	3600 3400 3700 3300
+Entry Wire Line
+	3700 3400 3800 3300
+Entry Wire Line
+	3800 3400 3900 3300
+Entry Wire Line
+	3900 3400 4000 3300
+Wire Bus Line
+	3900 3400 700  3400
+Wire Bus Line
+	700  3400 700  7200
+$Comp
+L GNDPWR #PWR?
+U 1 1 56973356
+P 2700 3500
+F 0 "#PWR?" H 2700 3300 50  0001 C CNN
+F 1 "GNDPWR" H 2700 3370 50  0000 C CNN
+F 2 "" H 2700 3450 50  0000 C CNN
+F 3 "" H 2700 3450 50  0000 C CNN
+	1    2700 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3100 2800 3100
+Connection ~ 2600 3000
+Connection ~ 2700 3100
+Connection ~ 2800 3000
+Connection ~ 2700 3000
+$Comp
+L VCC #PWR?
+U 1 1 56973E46
+P 600 3000
+F 0 "#PWR?" H 600 2850 50  0001 C CNN
+F 1 "VCC" H 600 3150 50  0000 C CNN
+F 2 "" H 600 3000 50  0000 C CNN
+F 3 "" H 600 3000 50  0000 C CNN
+	1    600  3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  3000 600  3100
+Wire Wire Line
+	600  3100 800  3100
+Connection ~ 800  3000
+$Comp
+L VCC #PWR?
+U 1 1 56974234
+P 4400 3000
+F 0 "#PWR?" H 4400 2850 50  0001 C CNN
+F 1 "VCC" H 4400 3150 50  0000 C CNN
+F 2 "" H 4400 3000 50  0000 C CNN
+F 3 "" H 4400 3000 50  0000 C CNN
+	1    4400 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3100 4400 3100
+Wire Wire Line
+	4400 3100 4400 3000
+Connection ~ 4200 3000
 $EndSCHEMATC
