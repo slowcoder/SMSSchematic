@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name SMSFootprints)(type KiCad)(uri "$(KIPRJMOD)/SMSFootprints.pretty")(options "")(descr ""))
+)
