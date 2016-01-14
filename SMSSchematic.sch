@@ -2111,7 +2111,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 1300 4000 3300
 Wire Wire Line
-	4100 1300 4100 3000
+	4100 1300 4100 3700
 Wire Wire Line
 	4200 1300 4200 3100
 Wire Wire Line
@@ -2450,4 +2450,7 @@ Text Label 10050 8500 0    60   ~ 0
 VDP_CLK
 Wire Wire Line
 	10050 8500 10400 8500
+Text Label 4100 3700 1    60   ~ 0
+CONT
+Connection ~ 4100 3000
 $EndSCHEMATC
