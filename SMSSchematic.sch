@@ -1463,13 +1463,13 @@ $EndComp
 $Comp
 L VCC #PWR8
 U 1 1 56974234
-P 4400 3000
-F 0 "#PWR8" H 4400 2850 50  0001 C CNN
-F 1 "VCC" H 4400 3150 50  0000 C CNN
-F 2 "" H 4400 3000 50  0000 C CNN
-F 3 "" H 4400 3000 50  0000 C CNN
-	1    4400 3000
-	1    0    0    -1  
+P 4200 3100
+F 0 "#PWR8" H 4200 2950 50  0001 C CNN
+F 1 "VCC" H 4200 3250 50  0000 C CNN
+F 2 "" H 4200 3100 50  0000 C CNN
+F 3 "" H 4200 3100 50  0000 C CNN
+	1    4200 3100
+	-1   0    0    1   
 $EndComp
 NoConn ~ 10400 8600
 Text Label 1200 3700 1    60   ~ 0
@@ -1478,7 +1478,7 @@ Text Label 1800 3700 1    60   ~ 0
 EXM2
 Text Label 2000 3700 1    60   ~ 0
 CE2
-Text Label 4500 2300 2    60   ~ 0
+Text Label 6000 2300 2    60   ~ 0
 CE3
 Text Label 6000 1400 2    60   ~ 0
 CE4
@@ -1758,11 +1758,11 @@ Wire Wire Line
 Wire Wire Line
 	11500 9600 11500 9700
 Wire Bus Line
-	11400 9800 10600 9800
+	10600 9800 11400 9800
 Wire Bus Line
-	10600 9800 10600 11000
+	10600 11000 10600 9800
 Wire Bus Line
-	10600 11000 600  11000
+	600  11000 10600 11000
 Wire Wire Line
 	10400 6500 10300 6500
 Wire Wire Line
@@ -1840,9 +1840,9 @@ Wire Wire Line
 Wire Wire Line
 	11900 9200 12100 9200
 Wire Bus Line
-	15400 9700 12200 9700
+	12200 9700 15400 9700
 Wire Bus Line
-	12200 9700 12200 7800
+	12200 7800 12200 9700
 Wire Wire Line
 	12300 7700 12500 7700
 Wire Wire Line
@@ -1937,7 +1937,7 @@ Wire Wire Line
 Wire Wire Line
 	800  10100 1100 10100
 Wire Bus Line
-	1200 7000 10100 7000
+	800  7000 10100 7000
 Wire Wire Line
 	6400 7100 6400 8700
 Wire Wire Line
@@ -2031,9 +2031,9 @@ Wire Wire Line
 Wire Wire Line
 	14900 6900 14900 7200
 Wire Wire Line
-	13900 7800 14000 7800
+	14000 7800 13900 7800
 Wire Wire Line
-	14000 7800 14000 7600
+	14000 7600 14000 7800
 Wire Wire Line
 	13900 7700 14000 7700
 Connection ~ 14000 7700
@@ -2045,7 +2045,7 @@ Wire Wire Line
 	15800 7700 15900 7700
 Connection ~ 15900 7700
 Wire Bus Line
-	4600 6800 7700 6800
+	900  6800 7700 6800
 Wire Wire Line
 	800  1300 800  3100
 Wire Wire Line
@@ -2067,7 +2067,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 1300 1700 3300
 Wire Wire Line
-	1800 1300 1800 3700
+	1800 1300 1800 4100
 Wire Wire Line
 	1900 1300 1900 3300
 Wire Wire Line
@@ -2115,35 +2115,31 @@ Wire Wire Line
 Wire Wire Line
 	4200 1300 4200 3100
 Wire Wire Line
-	4300 1300 4300 2150
+	4300 1300 4300 3300
 Wire Wire Line
-	4400 1300 4400 2150
+	4400 1300 4400 3700
 Wire Wire Line
-	4500 1300 4500 2150
+	4500 1300 4500 3700
 Wire Wire Line
-	4600 1300 4600 2150
+	4600 1300 4600 3700
 Wire Wire Line
-	4700 1300 4700 2150
+	4700 1300 4700 3700
 Wire Wire Line
-	4800 1300 4800 2150
+	4800 1300 4800 3700
 Wire Wire Line
-	4900 1300 4900 2150
+	5100 1300 5100 3700
 Wire Wire Line
-	5000 1300 5000 2150
+	5200 1300 5200 3700
 Wire Wire Line
-	5100 1300 5100 2150
+	5300 1300 5300 2550
 Wire Wire Line
-	5200 1300 5200 2150
+	5400 1300 5400 5000
 Wire Wire Line
-	5300 1300 5300 2150
+	5500 1300 5500 4100
 Wire Wire Line
-	5400 1300 5400 2150
+	5600 1300 5600 4100
 Wire Wire Line
-	5500 1300 5500 2150
-Wire Wire Line
-	5600 1300 5600 2150
-Wire Wire Line
-	5700 1300 5700 2150
+	5700 1300 5700 3700
 Connection ~ 800  2150
 Connection ~ 900  2150
 Connection ~ 1000 2150
@@ -2187,7 +2183,7 @@ Connection ~ 2900 3000
 Connection ~ 3000 3000
 Connection ~ 3100 3000
 Wire Bus Line
-	3000 3200 600  3200
+	600  3200 3000 3200
 Connection ~ 1300 3000
 Connection ~ 1400 3000
 Connection ~ 1500 3000
@@ -2204,7 +2200,7 @@ Connection ~ 3800 3000
 Connection ~ 3900 3000
 Connection ~ 4000 3000
 Wire Bus Line
-	3900 3400 700  3400
+	700  3400 4200 3400
 Wire Bus Line
 	700  3400 700  7200
 Wire Wire Line
@@ -2218,19 +2214,15 @@ Wire Wire Line
 Wire Wire Line
 	600  3100 800  3100
 Connection ~ 800  3000
-Wire Wire Line
-	4200 3100 4400 3100
-Wire Wire Line
-	4400 3100 4400 3000
 Connection ~ 4200 3000
 Connection ~ 1800 3000
 Connection ~ 1200 3000
 Wire Wire Line
-	2000 3700 2000 3000
+	2000 3000 2000 3700
 Wire Wire Line
 	2000 2150 2000 2300
 Wire Wire Line
-	2000 2300 4500 2300
+	2000 2300 6000 2300
 Wire Wire Line
 	2000 1300 2000 1400
 Wire Wire Line
@@ -2239,9 +2231,9 @@ Connection ~ 900  3000
 Connection ~ 1000 3000
 Connection ~ 1100 3000
 Wire Bus Line
-	1300 9000 1300 7300
+	1300 7300 1300 9000
 Wire Bus Line
-	7800 9600 7800 7100
+	7800 7100 7800 9600
 Wire Wire Line
 	12500 6900 14900 6900
 Wire Bus Line
@@ -2337,7 +2329,7 @@ Wire Wire Line
 Text GLabel 8050 6700 2    60   Input ~ 0
 GAMEPORTS
 Wire Bus Line
-	7950 9100 7950 6700
+	7950 6700 7950 9100
 Wire Bus Line
 	7950 6700 8050 6700
 Text GLabel 13450 2150 0    60   Input ~ 0
@@ -2377,7 +2369,7 @@ Entry Bus Bus
 Wire Bus Line
 	13450 2150 13550 2150
 Wire Bus Line
-	13650 2050 13650 1250
+	13650 1250 13650 2050
 Wire Bus Line
 	13650 2250 13650 3250
 $Sheet
@@ -2453,4 +2445,276 @@ Wire Wire Line
 Text Label 4100 3700 1    60   ~ 0
 CONT
 Connection ~ 4100 3000
+Wire Wire Line
+	11000 5300 11000 5000
+Wire Wire Line
+	11000 5000 2200 5000
+Wire Wire Line
+	2200 5000 2200 7350
+$Comp
+L R_Small R?
+U 1 1 5697A925
+P 11200 1450
+F 0 "R?" H 11230 1470 50  0000 L CNN
+F 1 "100K" H 11230 1410 50  0000 L CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" H 11200 1450 50  0001 C CNN
+F 3 "" H 11200 1450 50  0000 C CNN
+	1    11200 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small D?
+U 1 1 5697AC2D
+P 11400 1450
+F 0 "D?" H 11350 1530 50  0000 L CNN
+F 1 "D_Small" H 11250 1370 50  0000 L CNN
+F 2 "" V 11400 1450 50  0000 C CNN
+F 3 "" V 11400 1450 50  0000 C CNN
+	1    11400 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11200 1550 11200 1950
+Wire Wire Line
+	11200 1650 11650 1650
+Wire Wire Line
+	11400 1650 11400 1550
+Connection ~ 11200 1650
+$Comp
+L VCC #PWR?
+U 1 1 5697B0FC
+P 11200 1150
+F 0 "#PWR?" H 11200 1000 50  0001 C CNN
+F 1 "VCC" H 11200 1300 50  0000 C CNN
+F 2 "" H 11200 1150 50  0000 C CNN
+F 3 "" H 11200 1150 50  0000 C CNN
+	1    11200 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11200 1150 11200 1350
+Wire Wire Line
+	11200 1250 11400 1250
+Wire Wire Line
+	11400 1250 11400 1350
+Connection ~ 11200 1250
+Text Label 8900 6650 3    60   ~ 0
+#RESET
+Text Label 11200 1950 1    60   ~ 0
+#RESET
+Text Label 10400 5100 0    60   ~ 0
+#RESET
+Wire Wire Line
+	10400 5100 10800 5100
+Wire Wire Line
+	10800 5100 10800 5300
+$Comp
+L C_Small C?
+U 1 1 5697C50A
+P 11650 1450
+F 0 "C?" H 11660 1520 50  0000 L CNN
+F 1 "10uF" H 11660 1370 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 11650 1450 50  0001 C CNN
+F 3 "" H 11650 1450 50  0000 C CNN
+	1    11650 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR?
+U 1 1 5697C699
+P 11650 1250
+F 0 "#PWR?" H 11650 1050 50  0001 C CNN
+F 1 "GNDPWR" H 11650 1120 50  0000 C CNN
+F 2 "" H 11650 1200 50  0000 C CNN
+F 3 "" H 11650 1200 50  0000 C CNN
+	1    11650 1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11650 1250 11650 1350
+Wire Wire Line
+	11650 1650 11650 1550
+Connection ~ 11400 1650
+Wire Notes Line
+	10950 950  11850 950 
+Wire Notes Line
+	11850 950  11850 2000
+Wire Notes Line
+	11850 2000 10950 2000
+Wire Notes Line
+	10950 2000 10950 950 
+Text Notes 10950 950  0    60   ~ 0
+Reset
+Text Label 2400 6600 3    60   ~ 0
+#RESET
+Wire Wire Line
+	2400 6600 2400 7350
+Wire Bus Line
+	800  3800 800  7000
+Entry Wire Line
+	900  3700 1000 3800
+Entry Wire Line
+	1000 3700 1100 3800
+Entry Wire Line
+	1100 3700 1200 3800
+Entry Wire Line
+	5700 3700 5800 3800
+Entry Wire Line
+	4800 3700 4900 3800
+Entry Wire Line
+	4700 3700 4800 3800
+Entry Wire Line
+	4600 3700 4700 3800
+Entry Wire Line
+	4500 3700 4600 3800
+Entry Wire Line
+	4400 3700 4500 3800
+Entry Wire Line
+	4200 3400 4300 3300
+Connection ~ 4300 2150
+Text Label 4300 3150 1    60   ~ 0
+A15
+Connection ~ 4400 2150
+Connection ~ 4500 2150
+Connection ~ 4600 2150
+Connection ~ 4700 2150
+Connection ~ 4800 2150
+Connection ~ 5700 2150
+Text Label 10400 5000 0    60   ~ 0
+CLK
+Text Label 5700 3700 1    60   ~ 0
+NMI
+Text Label 4800 3700 1    60   ~ 0
+WAIT
+Text Label 4700 3700 1    60   ~ 0
+HALT
+Text Label 4600 3700 1    60   ~ 0
+REFSH
+Text Label 4500 3700 1    60   ~ 0
+IOREQ
+Text Label 4400 3700 1    60   ~ 0
+M1
+Wire Bus Line
+	5800 3800 800  3800
+Connection ~ 5400 5000
+Connection ~ 5400 2150
+Text Label 5400 2550 1    60   ~ 0
+CLK
+Text Notes 2300 8550 0    60   ~ 0
+CPU
+Wire Bus Line
+	900  6800 900  4000
+Entry Wire Line
+	4900 4000 5000 3900
+Connection ~ 5000 2150
+Text Label 5000 3700 1    60   ~ 0
+KILLGA
+Connection ~ 4900 2150
+Text Label 4900 3700 1    60   ~ 0
+INT
+Wire Wire Line
+	4900 3700 4900 2150
+Entry Wire Line
+	4900 3700 5000 3800
+Wire Wire Line
+	5000 2150 5000 3750
+Wire Wire Line
+	5000 3900 5000 3850
+Wire Wire Line
+	5000 3850 5050 3850
+Wire Wire Line
+	5050 3850 5050 3750
+Wire Wire Line
+	5050 3750 5000 3750
+Wire Bus Line
+	900  4000 4900 4000
+Text Label 5300 2550 1    60   ~ 0
+#RESET
+Connection ~ 5300 2150
+Entry Wire Line
+	5100 3700 5200 3800
+Entry Wire Line
+	5200 3700 5300 3800
+Connection ~ 5100 2150
+Connection ~ 5200 2150
+Text Label 5100 3700 1    60   ~ 0
+BUSRQ
+Text Label 5200 3700 1    60   ~ 0
+BUSAK
+Wire Wire Line
+	9800 8800 10000 8800
+Wire Wire Line
+	10000 8800 10000 8300
+Wire Wire Line
+	10000 8300 10400 8300
+Text Label 10150 8100 0    60   ~ 0
+EXM2
+Text Label 10150 8000 0    60   ~ 0
+EXM1
+Text Label 10150 7900 0    60   ~ 0
+CSRAM
+Text Label 10150 7800 0    60   ~ 0
+KBSEL
+Entry Wire Line
+	10050 7700 10150 7800
+Entry Wire Line
+	10050 7800 10150 7900
+Entry Wire Line
+	10050 7900 10150 8000
+Entry Wire Line
+	10050 8000 10150 8100
+Wire Bus Line
+	10050 6600 10050 8050
+Text Label 9950 8200 3    60   ~ 0
+CSRAM
+Wire Wire Line
+	9800 8500 9950 8500
+Entry Wire Line
+	9950 8150 10050 8050
+Wire Wire Line
+	9950 8500 9950 8150
+Wire Wire Line
+	10150 7800 10400 7800
+Wire Wire Line
+	10150 7900 10400 7900
+Wire Wire Line
+	10150 8000 10400 8000
+Wire Wire Line
+	10150 8100 10400 8100
+Wire Bus Line
+	1000 6600 10050 6600
+Wire Bus Line
+	1000 4200 1000 6600
+Entry Wire Line
+	5500 4100 5600 4200
+Entry Wire Line
+	5600 4100 5700 4200
+Connection ~ 5500 2150
+Connection ~ 5600 2150
+Wire Bus Line
+	5700 4200 1000 4200
+Text Label 5600 4100 1    60   ~ 0
+CSRAM
+Text Label 5500 4100 1    60   ~ 0
+KBSEL
+Entry Wire Line
+	1800 4100 1900 4200
+Entry Wire Line
+	1250 4100 1350 4200
+Wire Wire Line
+	1200 3700 1250 3700
+Wire Wire Line
+	1250 3700 1250 4100
+Text Label 9100 6650 3    60   ~ 0
+CONT
+Wire Wire Line
+	8900 6650 8900 7400
+Wire Wire Line
+	9100 6650 9100 7400
+Wire Wire Line
+	4400 8600 4400 6700
+Entry Wire Line
+	4400 6700 4500 6600
+Text Label 4400 8600 1    60   ~ 0
+EXM2
 $EndSCHEMATC
